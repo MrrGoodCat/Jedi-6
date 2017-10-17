@@ -5,15 +5,41 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.6
+	line-height: 1.5
 	font-family: "RobotoRegular", sans-serif
 	overflow-x: hidden
+	color: #111
 
 .hidden
 	display: none
 
 strong, b
 	font-family: "RobotoBold", sans-serif
+	font-weight: normal
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, .button
 	font-family: "RobotoCondensedBold", sans-serif
+	font-weight: normal
+	text-transform: uppercase
+
+.top-line
+	background-color: $main-color
+	text-align: center
+	a 
+		color: #fff
+	ul, li 
+		list-style-type: none
+		padding: 0
+		margin: 0
+	.sf-menu
+		margin: auto
+		float: none
+		display: inline-block
+		font-family: "RobotoCondensedRegular", sans-serif
+		font-size: em(15px)
+		li
+			background-color: transparent
+			a
+				color: #FFF
+	>	li
+			display: inline-block
