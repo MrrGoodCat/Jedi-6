@@ -10,8 +10,9 @@ $(function() {
   owl.owlCarousel({
    loop: true,
    items: 1,
-   itemElement: 'slide',
-   nav: true
+   itemClass: 'slide-wrap',
+   nav: true,
+   navText: ""
   });
 
   $('.next').on('click', function () {
