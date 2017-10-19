@@ -6,6 +6,28 @@ $(function() {
 		delay: 200
 	});
 
+	var owl = $('.slider');
+  owl.owlCarousel({
+   loop: true,
+   items: 1,
+   itemElement: 'slide',
+   nav: true
+  });
+
+  $('.next').on('click', function () {
+      owl.trigger('next.owl.carousel', [500]);
+  });
+  $('.prev').on('click', function () {
+      owl.trigger('prev.owl.carousel', [500]);
+  }); 
+
+  // $(".slider").owlCarousel({
+  // 	loop: true,
+  // 	items: 1,
+  // 	itemElement: 'slide',
+  // 	nav: true
+  // });
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
