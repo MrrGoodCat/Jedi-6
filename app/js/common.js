@@ -22,6 +22,13 @@ $(function() {
       owl.trigger('prev.owl.carousel', [500]);
   }); 
 
+  $(".mobile-mnu").click(function() {
+  	var thiss = $(this).find(".toggle-mnu")
+  	thiss.toggleClass("on");
+  	$(".main-mnu").slideToggle();
+  	return false;
+  });
+
   // $(".slider").owlCarousel({
   // 	loop: true,
   // 	items: 1,
