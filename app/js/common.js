@@ -22,7 +22,16 @@ $(function() {
       owl.trigger('prev.owl.carousel', [500]);
   }); 
 
+	$("#my-menu").mmenu({
+		extensions : [ 'widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black' ],
+		navbar: {
+			title: "Меню"
+		}
+	});
+
   $(".mobile-mnu").click(function() {
+  	var mmAPI = $("#my-menu").data( "mmenu" );
+  	mmAPI.open();
   	var thiss = $(this).find(".toggle-mnu")
   	thiss.toggleClass("on");
   	$(".main-mnu").slideToggle();
