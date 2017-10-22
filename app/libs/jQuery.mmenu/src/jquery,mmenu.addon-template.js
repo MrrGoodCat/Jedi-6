@@ -7,8 +7,8 @@
 
 (function( $ ) {
 
-	const _PLUGIN_ = 'mmenu';
-	const _ADDON_  = '{ADDON}';
+	var _PLUGIN_ = 'mmenu',
+		_ADDON_  = '{ADDON}';
 
 
 	$[ _PLUGIN_ ].addons[ _ADDON_ ] = {
@@ -40,7 +40,7 @@
 //			this._api = $.merge( this._api, [ 'fn1', 'fn2' ] );
 
 			//	Bind functions to update
-//			this.bind( 'updateListview', function() {} );
+//			this.bind( 'update', function() {} );
 //			this.bind( 'initPanels', function() {} );
 //			this.bind( 'initPage', function() {} );
 

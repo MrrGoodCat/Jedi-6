@@ -2,12 +2,11 @@
 	jQuery.mmenu borderStyle extension CSS
 */
 
-@import "../../scss/import";
+@import "../../css/_imp/import";
 
 
 .mm-menu.mm-border-none .mm-listview > li,
-.mm-menu .mm-listview.mm-border-none > li,
-.mm-menu .mm-listview > li.mm-border-none
+.mm-listview.mm-border-none > li
 {
 	&:after
 	{
@@ -16,8 +15,7 @@
 }
 
 .mm-menu.mm-border-full .mm-listview > li,
-.mm-menu .mm-listview.mm-border-full > li,
-.mm-menu .mm-listview > li.mm-border-full
+.mm-listview.mm-border-full > li
 {
 	&:after
 	{
@@ -26,8 +24,7 @@
 }
 
 .mm-menu.mm-border-offset .mm-listview > li,
-.mm-menu .mm-listview.mm-border-offset > li,
-.mm-menu .mm-listview > li.mm-border-offset
+.mm-listview.mm-border-offset > li
 {
 	&:after
 	{

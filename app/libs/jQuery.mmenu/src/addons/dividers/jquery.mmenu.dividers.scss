@@ -2,7 +2,7 @@
 	jQuery.mmenu dividers addon CSS
 */
 
-@import "../../scss/import";
+@import "../../css/_imp/import";
 
 
 
@@ -36,9 +36,10 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 10;
+	z-index: 2;
 	
 	//	Bugfix
+	//	transform: translate3d( 0, 0, 0 );
 	@include mm_translate( 0, 0 );
 	
 	&:after

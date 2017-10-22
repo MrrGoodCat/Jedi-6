@@ -2,10 +2,15 @@
 	jQuery.mmenu navbars addon CSS
 */
 
-@import "../../scss/import";
+@import "../../css/_imp/import";
 
 @mixin mm_navbar_positioning( $pos, $nr )
 {
+	.mm-navbar-#{$pos}-#{$nr}
+	{
+		#{$pos}: $mm_navbarHeight * ( $nr - 1 );
+	}
+
 	.mm-hasnavbar-#{$pos}-#{$nr}
 	{
 		.mm-panels
@@ -29,41 +34,33 @@
 	}
 }
 
-.mm-navbars-top,
-.mm-navbars-bottom
+.mm-menu > .mm-navbar
 {
 	background: inherit;
-	border-color: inherit;
-	border-width: 0;
-	overflow: hidden;
-	position: absolute;
-    left: 0;
-    right: 0;
+	padding: 0;
 	z-index: 3;
 
-	> .mm-navbar
-	{
-		border: none;
-		padding: 0;
-		position: relative;
-
-		//	Bugfix
-		@include mm_translate( 0, 0 );
-	}
+	//	Bugfix
+	//	transform: translate3d( 0, 0, 0 );
+	@include mm_translate( 0, 0 );
 }
-.mm-navbars-top
+.mm-navbar-bottom
 {
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	top: 0;
-}
-.mm-navbars-bottom
-{
-	border-top-style: solid;
 	border-top-width: 1px;
+	border-top-style: solid;
+	border-bottom: none;
+	top: auto;
 	bottom: 0;
 }
 
+.mm-navbar-top ~ .mm-navbar-top
+{
+	border-bottom: none;
+}
+.mm-navbar-bottom ~ .mm-navbar-bottom
+{
+	border-top: none;
+}
 
 .mm-navbar.mm-hasbtns
 {

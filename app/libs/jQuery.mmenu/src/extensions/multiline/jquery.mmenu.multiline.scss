@@ -2,12 +2,12 @@
 	jQuery.mmenu multiline extension CSS
 */
 
-@import "../../scss/import";
+@import "../../css/_imp/import";
 
 
 .mm-menu.mm-multiline .mm-listview > li,
-.mm-menu .mm-listview.mm-multiline > li,
-.mm-menu .mm-listview > li.mm-multiline
+.mm-listview.mm-multiline > li
+.mm-listview > li.mm-multiline
 {
 	> a,
 	> span

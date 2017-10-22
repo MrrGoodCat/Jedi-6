@@ -2,7 +2,7 @@
 	jQuery.mmenu dropdown addon CSS
 */
 
-@import "../../scss/import";
+@import "../../css/_imp/import";
 
 
 .mm-menu.mm-dropdown
@@ -24,13 +24,13 @@ html.mm-dropdown .mm-menu
 {
 	z-index: 2;
 }
-html.mm-dropdown.mm-opened:not(.mm-opening) .mm-menu.mm-dropdown
+html.mm-dropdown.mm-opened:not(.mm-opening) .mm-menu
 {
 	display: none;
 }
 
 
-//	Tip
+//	Arrow
 .mm-menu
 {
 	&.mm-tip:before
@@ -48,21 +48,20 @@ html.mm-dropdown.mm-opened:not(.mm-opening) .mm-menu.mm-dropdown
 
 		transform: rotate( 45deg );
 	}
-
 	&.mm-tipleft:before
 	{
-		left: 2 + $mm_dropdownTipX;
+		left: 2 + $mm_dropdownTipX;	// correct rotation
 	}
 	&.mm-tipright:before
 	{
-		right: 2 + $mm_dropdownTipX;
+		right: 2 + $mm_dropdownTipX;	// correct rotation
 	}
 	&.mm-tiptop:before
 	{
-		top: 2 - $mm_dropdownTipY;
+		top: 2 - $mm_dropdownTipY; 	// correct rotation
 	}
 	&.mm-tipbottom:before
 	{
-		bottom: 2 - $mm_dropdownTipY;
+		bottom: 2 - $mm_dropdownTipY; // correct rotation
 	}
 }
