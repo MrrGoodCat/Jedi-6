@@ -14,6 +14,7 @@ body
 	font-family: "RobotoRegular", sans-serif
 	overflow-x: hidden
 	color: #111
+	background-color: transparent
 
 .hidden
 	display: none
@@ -94,7 +95,8 @@ h1, h2, h3, h4, h5, h6, .button
 	background-color: rgba(lighten($main-color, 2%), .8)
 	color: #fff
 	padding: 50px 0
-	position: relative
+	position: absolute
+	width: 100%
 	z-index: 1
 	box-shadow: rgba(255,255,255, .03) 0 5px 0 5px
 	&-content
@@ -211,6 +213,7 @@ h1, h2, h3, h4, h5, h6, .button
 	margin-top: 22px
 
 .slider-wrap
+	position: relative
 	.slider-nav-container
 		position: relative
 	.slider-nav
@@ -222,11 +225,10 @@ h1, h2, h3, h4, h5, h6, .button
 		div
 			cursor: pointer
 			position: absolute
-			top: 180px
+			top: 400px
 			&:last-child
 				right: 0
 .slider
-	position: absolute
 	top: 0
 	width: 100%
 	overflow-x: hidden
@@ -260,9 +262,9 @@ h1, h2, h3, h4, h5, h6, .button
 				transform: scale(1)
 	.slide
 		color: #fff
-		padding-bottom: 110px
+		padding-bottom: 130px
 		position: relative
-		padding-top: 280px
+		padding-top: 220px
 		h2
 			font-family: "RobotoCondensedLight", sans-serif
 			font-size: em(48px)

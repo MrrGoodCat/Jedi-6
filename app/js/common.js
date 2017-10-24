@@ -22,11 +22,20 @@ $(function() {
       owl.trigger('prev.owl.carousel', [500]);
   }); 
 
+	$(".sf-menu").after("<div id='my-menu'>");
+	$(".sf-menu").clone().appendTo("#my-menu");
+	$("#my-menu").find("*").attr("style", "");
+	$("#my-menu").find("ul").removeClass("sf-menu");
 	$("#my-menu").mmenu({
 		extensions : [ 'widescreen', 'theme-white', 'effect-menu-slide', 'pagedim-black' ],
 		navbar: {
 			title: "Меню"
 		}
+	});
+
+	var api = $("#my-menu").data("mmenu");
+	api.bind("close", function () {
+		$(".toggle-mnu").removeClass("on");
 	});
 
   $(".mobile-mnu").click(function() {
