@@ -35,6 +35,150 @@ body textarea:required:valid
 	.fa
 		display: none
 
+.sect-services
+	background-color: #efefef
+	.col-md-3
+		padding: 0
+
+.service-item
+	border: 5px lighten($main-color, 6%) solid
+	transition: all .5s ease
+	text-align: center
+	padding-bottom: 32px
+	background-color: #fff
+	position: relative
+	&:hover
+		transform: scale(1.05)
+		border-color: $accent-color
+		box-shadow: rgba(0,0,0, .35) 0 0 32px
+		z-index: 2
+		.service-item-image
+			.fa
+				opacity: .4
+			&:before
+				content: ''
+				opacity: .7
+		.service-item-stars
+			color: $accent-color
+			.fa
+				margin: 0 3px			
+	h4
+		font-size: 18px
+		margin-bottom: 10px			
+	&-image
+		min-height: 190px
+		background-size: cover
+		position: relative
+		.fa
+			font-size: 30px
+			color: #fff
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-left: -10px
+			margin-top: -10px
+			opacity: 0
+			transition: all .5s ease
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background-color: $main-color
+			opacity: 0
+			transition: all .5s ease
+	&-stars
+		font-size: 11px
+		color: #b4b4b4
+		.fa
+			margin-left: 1px
+			transition: all .5s ease
+	&-price
+		margin-top: 5px
+		margin-bottom: 26px
+		font-size: em(17px)
+		font-family: "RobotoBold", sans-serif
+		span
+			font-size: em(28px)
+		.fa
+			color: $accent-color
+			font-size: 18px
+
+.sect-universal
+	background-color: #efefef
+	padding: 60px 0
+	background-size: cover
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		opacity: .85
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+	h2
+		margin-bottom: 45px
+		font-size: em(40px)
+		line-height: em(18px)
+
+.sect-news
+	background-image: url("../img/news-bg.jpg")
+	color: #fff
+	&::before
+		background-color: $main-color
+
+.new-item
+	.new-item-text
+		margin-bottom: 25px
+	background-color: #efefef
+	padding: 1px 1px 32px 1px
+	color: #111
+	text-align: center
+	margin: 20px 0
+	&:hover
+		.new-item-img
+			.fa
+				opacity: .4
+			&::before
+				opacity: .7
+	&-img
+		min-height: 180px
+		background-size: cover
+		display: block
+		position: relative
+		.fa
+			font-size: 30px
+			color: #fff
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-left: -10px
+			margin-top: -10px
+			opacity: 0
+			transition: all .5s ease
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background-color: $main-color
+			opacity: 0
+			transition: all .5s ease
+	h4, p
+		padding: 0 20px
+	p
+		font-size: em(14px)
+		margin-bottom: 36px
+		margin-top: 0
+	h4
+		margin-bottom: 12px
+	&-img
+
 //ALWAYS END
 @import "media"
 

@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6, .button
 	background-color: $accent-color
 	border-radius: 2px
 	font-size: em(16px)
-	padding: 10px 30px
+	padding: 10px 35px
 	position: relative
 	transition: background-color .25s ease
 
@@ -205,7 +205,7 @@ h1, h2, h3, h4, h5, h6, .button
 
 	&-small
 		font-size: em(14px)
-		padding: 6px 22px
+		padding: 6px 18px
 		&::after
 			height: 2px
 
@@ -365,3 +365,38 @@ h1, h2, h3, h4, h5, h6, .button
 		text-align: center
 		font-family: "RobotoRegular", sans-serif
 		font-size: em(15px)
+
+.sect-teaser
+	background-color: $main-color
+	color: #fff
+	padding: 28px 0 10px
+
+.teaser
+	&-item
+		display: table-row
+		>div
+			padding-bottom: 18px
+	&-count
+		display: table-cell
+		vertical-align: middle
+		&-wrap
+			width: 43px
+			height: 43px
+			position: relative
+		.fa::before
+			font-size: 48px
+			color: lighten($main-color, 10%)
+		.teaser-number
+			position: absolute
+			top: 8px
+			width: 100%
+			text-align: center
+			font-family: "RobotoCondensedBold", sans-serif
+			font-size: 22px
+			color: $accent-color
+	&-text
+		display: table-cell
+		font-family: "RobotoCondensedLight", sans-serif
+		line-height: 20px
+		padding-left: 15px
+		opacity: .28
