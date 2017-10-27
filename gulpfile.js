@@ -39,6 +39,7 @@ gulp.task('scripts', function() {
 		'./app/libs/owl.carousel/dist/owl.carousel.min.js',
 		'./app/libs/jQuery.mmenu/dist/js/jquery.mmenu.all.min.js',
 		'./app/libs/equalheights/equalheights.js',
+		'./app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 		])
 		.pipe(concat('libs.js'))
 		// .pipe(uglify()) //Minify libs.js
