@@ -73,6 +73,42 @@ h1, h2, h3, h4, h5, h6, .button,
 	.top-pannel-box
 		margin: 30px 0
 		h4
+			font-family: "RobotoCondensedBold", sans-serif
+			font-size: em(22px)
+			margin-bottom: 20px
+		li
+			display: block
+			max-width: 100%
+			opacity: 1
+			padding: 0
+			&.active
+				a
+					background-color: $accent-color
+					color: #fff
+					font-family: "RobotoBold", sans-serif
+					.fa
+						color: lighten($accent-color, 30%)
+			a
+				color: #111
+				font-size: em(18px)
+				display: block
+				padding-bottom: 8px
+				padding-top: 8px
+				border-bottom: #f0f0f0 1px solid
+				text-transform: uppercase
+				transition: all .5s ease
+				text-indent: 10px
+				padding-bottom: 8px
+				padding-top: 8px
+				padding-left: 20px
+				&:hover
+					color: $main-color
+				.fa
+					font-size: 14px
+					color: $accent-color
+					top: 12px
+		.menu-type-2
+
 			
 
 .top-line
